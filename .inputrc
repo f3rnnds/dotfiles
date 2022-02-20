@@ -1,3 +1,14 @@
-"\C-h": backward-kill-word
-"\e[3;5~": kill-word
 
+# ctrl+backspace
+"\e[3;5~": kill-word
+# ctrl+delete
+"\C-h": backward-kill-word
+
+# uparrow
+"\e[A": history-search-backward
+# downarrow
+"\e[B": history-search-forward
+
+set show-all-if-ambiguous on
+
+set completion-ignore-case on

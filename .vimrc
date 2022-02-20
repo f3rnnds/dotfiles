@@ -1,3 +1,4 @@
+
 set visualbell
 set t_vb=
 colorscheme default
@@ -14,4 +15,3 @@ set statusline+=%1*\            " full path
 set statusline+=%3*%=           " separation
 set statusline+=%1*\ %l/%L,%c\  " lines and column
 set statusline+=%0*\ %P\        " percentage
-
