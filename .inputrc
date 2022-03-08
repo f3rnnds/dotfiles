@@ -1,4 +1,7 @@
 
+# include system-wide inputrc, ignored when user has ~/.inputrc
+$include /etc/inputrc
+
 # ctrl+backspace
 "\e[3;5~": kill-word
 # ctrl+delete
