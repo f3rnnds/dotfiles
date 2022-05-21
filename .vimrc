@@ -1,4 +1,5 @@
 
+set mouse-=a
 set visualbell
 set t_vb=
 colorscheme default
