@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+
+    - name: install .bashrc
+      blockinfile:
+        path: ~/.bashrc
+        block: "{{ lookup('file', '.bashrc') }}"
+
+    - name: install .vimrc
+      blockinfile:
+        path: ~/.vimrc
+        block: "{{ lookup('file', '.vimrc') }}"
+        create: yes
+        marker: '" {mark} ANSIBLE MANAGED BLOCK'
+
+    - name: install .inputrc
+      blockinfile:
+        path: ~/.inputrc
+        block: "{{ lookup('file', '.inputrc') }}"
+        create: yes

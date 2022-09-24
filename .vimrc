@@ -1,4 +1,4 @@
-
+" f3rnnds dotfiles
 set mouse-=a
 set visualbell
 set t_vb=
