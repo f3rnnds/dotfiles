@@ -9,5 +9,9 @@ my dotfiles
 ```
 or
 ```
-ansible-pull -U https://github.com/f3rnnds/dotfiles.git
+ansible-pull -U http://github.com/f3rnnds/dotfiles
 ```
+
+# references
+
+* https://www.gnu.org/software/screen/manual/screen.html
