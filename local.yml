@@ -21,3 +21,9 @@
         path: ~/.inputrc
         block: "{{ lookup('file', '.inputrc') }}"
         create: yes
+
+    - name: install .screenrc
+      blockinfile:
+        path: ~/.screenrc
+        block: "{{ lookup('file', '.screenrc') }}"
+        create: yes

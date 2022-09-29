@@ -1,0 +1,10 @@
+# f3rnnds dotfiles
+# key bindings
+bindkey ^h eval "split -h" "focus" "screen"
+bindkey ^v eval "split -v" "focus" "screen"
+# variables
+startup_message off
+altscreen on
+mousetrack on
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+caption string "%?%F%{.R.}%?%3n %t%? [%h]%?"
