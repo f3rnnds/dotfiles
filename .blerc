@@ -1,0 +1,5 @@
+bleopt exec_elapsed_enabled='real>=1000'
+ble-face auto_complete=fg=238
+ble-face syntax_comment=fg=242,italic
+ble-bind -f 'M-c' 'copy-region-or copy-backward-uword'
+ble-bind -f 'M-v' 'yank'

@@ -9,6 +9,12 @@
         path: ~/.bashrc
         block: "{{ lookup('file', '.bashrc') }}"
 
+    - name: install .blerc
+      blockinfile:
+        path: ~/.blerc
+        block: "{{ lookup('file', '.blerc') }}"
+        create: yes
+
     - name: install .vimrc
       blockinfile:
         path: ~/.vimrc
