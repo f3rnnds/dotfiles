@@ -33,3 +33,9 @@
         path: ~/.screenrc
         block: "{{ lookup('file', '.screenrc') }}"
         create: yes
+
+    - name: install .config/bat/config
+      blockinfile:
+        path: ~/.config/bat/config
+        block: "{{ lookup('file', './.config/bat/config') }}"
+        create: yes
