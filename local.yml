@@ -1,6 +1,6 @@
----
 - hosts: localhost
   connection: local
+  gather_facts: false
 
   tasks:
 
@@ -13,29 +13,29 @@
       blockinfile:
         path: ~/.blerc
         block: "{{ lookup('file', '.blerc') }}"
-        create: yes
+        create: true
 
     - name: install .vimrc
       blockinfile:
         path: ~/.vimrc
         block: "{{ lookup('file', '.vimrc') }}"
-        create: yes
+        create: true
         marker: '" {mark} ANSIBLE MANAGED BLOCK'
 
     - name: install .inputrc
       blockinfile:
         path: ~/.inputrc
         block: "{{ lookup('file', '.inputrc') }}"
-        create: yes
+        create: true
 
     - name: install .screenrc
       blockinfile:
         path: ~/.screenrc
         block: "{{ lookup('file', '.screenrc') }}"
-        create: yes
+        create: true
 
     - name: install .config/bat/config
       blockinfile:
         path: ~/.config/bat/config
         block: "{{ lookup('file', './.config/bat/config') }}"
-        create: yes
+        create: true
